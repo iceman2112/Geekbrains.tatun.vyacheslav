@@ -9,7 +9,7 @@ package Lesson7;
  *
  * @author Slava
  */
-public class Cat {
+public class Cat implements CanEat{
     private String name;
 
     public String getName() {
@@ -27,6 +27,7 @@ public class Cat {
         this.appetite = appetite; 
     }
     
+    @Override
     public boolean eat(CanFeed feed){
         if (feed.decreaseFood(appetite)) { 
             satiety = true;

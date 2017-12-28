@@ -10,5 +10,5 @@ package Lesson7;
  * @author Slava
  */
 public interface CanEat {
-    
+    public boolean eat(CanFeed feed);
 }
